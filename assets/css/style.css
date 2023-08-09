@@ -53,7 +53,7 @@ cursor: pointer;
 }
 .bg{
      width: 100%;
-     height: 100vh;
+     height: 130vh;
      object-fit: cover;
      position: absolute;
      top: 0;
@@ -62,11 +62,11 @@ cursor: pointer;
 }
 .main{
      background: #000;
-     height: 100vh;
+     height: 130vh;
 }
 .section1{
      position: absolute;
-     top: 35%;
+     top: 37%;
      z-index: 30;
      padding:0 4rem;
 }
@@ -95,11 +95,83 @@ border-radius: 1rem;
 width: 8rem;
 }
 .about-section{
-     
+     padding: 0 4rem;
+     z-index: 999;
+     margin-top: 9rem;
 }
-.about-name{
+.about-h{
+font-family: 'Bebas Neue', sans-serif;
+font-weight: 100;
+font-size: 4rem;
+}
+.about-p{
+color: grey;
+font-family: 'Roboto Flex', sans-serif;
+margin-right: 3rem; 
+
+}
+.about-name{ 
+font-family: 'Roboto Flex', sans-serif;
      
 }
 .about-img{
-     width: 100%;
+     width: 80%;
+     height: 85vh;
+     object-fit: cover;
 }
+.about-wrap{
+     display: flex;
+}
+.about-left{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     margin-right: 1rem;
+}
+.about-right{
+position: absolute;
+right: 0;
+top: 125%;
+z-index: 30;
+}
+.practice{
+     padding: 3rem 4rem;
+}
+.practice-head{
+margin-top: 5rem;
+font-family: 'Bebas Neue', sans-serif;
+font-weight: 100;
+font-size: 2.9rem;
+}
+.practice-p{
+color: grey;
+margin-top: 4rem;
+}
+.practice-wrap{
+display: flex;
+gap: 1rem;
+margin-top: 3.5rem;
+}
+.wrap{
+display: flex;
+flex-direction: column;
+justify-content: left;
+}
+.pw-h{
+font-size: 3.5rem;
+color: lightgray;
+}
+.pw-h2{
+     font-family: 'Roboto Flex', sans-serif;
+       font-weight: 600;
+}
+.pw-p{
+     font-family: 'Roboto Flex', sans-serif;
+color: rgb(80, 79, 79);
+}
+
+.practice-wrap2{
+     display: flex;
+     gap: 1rem;
+     margin-top: 3.5rem;
+ }
