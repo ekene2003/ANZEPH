@@ -12,8 +12,8 @@
      align-items: center;
      padding: .5rem;
      position: relative;
-     z-index: 15;
      /* background: #000; */
+     z-index: 15;
 }
 .left-header{
 display: flex;
@@ -24,10 +24,12 @@ width: 5rem;
 /* height: 6rem; */
 }
 .left-right{
-     line-height: 1.5rem;
+     line-height: 1rem;
 }
 .brand-name{
 color: white;
+font-family: 'Cormorant', serif;
+
 }
 .brand-p{
      color: grey;
@@ -41,7 +43,8 @@ gap: 2rem;
 align-items: center;
 margin-left: 1rem;
 color: white;
-font-family: 'Raleway', sans-serif
+font-family: 'Roboto Flex', sans-serif;
+
 }
 .nav-link{
 
