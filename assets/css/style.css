@@ -213,13 +213,14 @@ display: block;
 margin: 0 auto;
 }
 .why{
-     padding: 4rem 4rem;
+     padding: 2rem 4rem;
      display: flex;
      justify-content: space-between;
      align-items: center;
      position: relative !important;
      background: #000;
-     height: 90vh;
+     height: 120vh;
+     gap: 2rem;
 }
 .why-left{
      z-index: 99;
@@ -227,12 +228,12 @@ margin: 0 auto;
 }
 .why-h{
      font-family: 'Bebas Neue', sans-serif;
-       font-size: 5rem;
+       font-size: 6rem;
        color: white;
 }
 .why-right{
      z-index: 99;
-     margin-top: 6rem;
+     margin-top: 5rem; 
 
 }
 .why-ul{
@@ -246,10 +247,10 @@ cursor: pointer;
 .why-li-wrap{
 display: flex;
 justify-content: space-between;
-gap: 7rem;
+gap: 3rem;
 }
 .why-li{
-margin-bottom: 3rem;
+margin-bottom: 1rem;
 }
 .why-bg{
 width: 100%;
@@ -261,15 +262,30 @@ opacity: 0.3;
      top: 459.5%;
      width: 100%;
      object-fit: cover;
-     height: 90vh;
+     height: 120vh;
 
 }
+.why-wrap{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     /* line-height: 1rem; */
+}
+.why-p{
+     color: rgba(165, 164, 164, 0.836);
+font-family: 'Roboto Flex', sans-serif;
+opacity: 0;
+}
+.why-wrap:hover .why-p{
+opacity: 1;
+
+} 
 .count{
      padding: 2rem 2rem;
      margin: 0 4rem;
      background: white;
  position: absolute;
- top: 540%;
+ top: 570%;
  width: 90%;
 }
 .count-wrap{

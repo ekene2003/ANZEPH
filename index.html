@@ -138,27 +138,38 @@
     </section>
     <section class="why">
       <div class="why-left">
-        <h2 class="why-h">Why <br> Choose Us</h2>
+        <h2 class="why-h">Why Choose Us</h2>
       </div>
       <div class="why-right">
         <div class="why-ul">
           <div class="why-li-wrap">
+            <div class="why-wrap">
           <div class="why-li">how to choose the right lawyer ?</div>
-          <hr>
+              <p class="why-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, consequatur cum. Ratione pariatur voluptatibus exercitationem totam?</p>
+            </div>
           <i class="fa fa-arrow-right"></i>
           </div>
           <div class="why-li-wrap">
+            <div class="why-wrap">
           <div class="why-li">What is the right way of fighting for your rights?</div>
+          <p class="why-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, consequatur cum. Ratione pariatur voluptatibus exercitationem totam?</p>
+
+            </div>
           <i class="fa fa-arrow-right"></i>
 
           </div>
           <div class="why-li-wrap">
+            <div class="why-wrap">
           <div class="why-li">How to deal with property matters?</div>
+          <p class="why-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, consequatur cum. Ratione pariatur voluptatibus exercitationem totam?</p>
+            </div>
           <i class="fa fa-arrow-right"></i>
-
           </div>
           <div class="why-li-wrap">
-          <div class="why-li">How to fight forgeries?</div>
+            <div class="why-wrap">
+              <div class="why-li">How to fight forgeries?</div>
+              <p class="why-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, consequatur cum. Ratione pariatur voluptatibus exercitationem totam?</p>
+           </div>
           <i class="fa fa-arrow-right"></i>
           </div>
         </div>
@@ -220,5 +231,29 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js
     "></script>
     <script src="./assets/js/all.min.js"></script>
+    <script>
+      function singleElem(elem) {
+        return document.querySelector(elem)
+      }
+      function multiElem(elem) {
+        return document.querySelectorAll(elem)
+      }
+      i = -1;
+      let background = singleElem(".bg-wrap");
+      let images = ["pexels-ekaterina-bolovtsova-6077326.jpg","pexels-ekaterina-bolovtsova-6077447.jpg","pexels-life-matters-4614165.jpg","pexels-august-de-richelieu-4427626.jpg"];
+      setInterval(() => {
+        i++;
+        if (i == 4) {
+          i = 0;
+         };
+         background.innerHTML = `
+         <img
+          src="./assets/images/${images[i]}"
+          alt=""
+          class="bg"
+        />
+         `;
+      }, 6000);
+    </script>
   </body>
 </html>
