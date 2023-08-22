@@ -5,7 +5,7 @@
      border: none;
      text-decoration: none;
      transition: all 1s ease-in-out ;
-
+     scroll-behavior: smooth;
      /* list-style-type: none; */
 }
 .main-header{
@@ -31,12 +31,10 @@ width: 5rem;
 .brand-name{
 color: white;
 font-family: 'Cormorant', serif;
-
 }
 .brand-p{
      color: grey;
      font-family: 'Roboto Flex', sans-serif;
-
 }
 .right-header{
      margin-right: 3rem;
@@ -52,10 +50,12 @@ align-items: center;
 margin-left: 1rem;
 color: white;
 font-family: 'Roboto Flex', sans-serif;
+cursor: pointer !important;
 }
-.nav-link{
-     cursor: pointer;
+.links:hover{
+     color: aqua !important;
 }
+
 .bg{
      width: 100%;
      height: 130vh;
@@ -99,6 +99,12 @@ color: #ca9617;
 padding: .5rem;
 border-radius: 1rem;
 width: 8rem;
+}
+.sec1-read-more:hover{
+     color: black;
+background: #ca9617;
+border: 2px solid black;
+
 }
 .about-section{
      padding: 0 4rem;
@@ -217,6 +223,10 @@ font-size: 1.4rem;
 .pw-w2-p{
 display: block;
 margin: 0 auto;
+cursor: pointer;
+}
+.pw-w2-p:hover{
+     transform: scale(1.3);
 }
 .why{
      padding: 2rem 4rem;
