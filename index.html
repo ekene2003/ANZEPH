@@ -41,11 +41,22 @@
         </div>
         <div class="right-header">
           <ul class="links">
+            <a href="#home">
             <li class="nav-link active">Home</li>
+            </a>
+            <a href="#about">
             <li class="nav-link">About</li>
+            </a>
+            <a href="#practice">
             <li class="nav-link">Practice Areas</li>
+            </a>
+            <a href="#help">
             <li class="nav-link">Attorneys</li>
+            </a>
+            <a href="#contact">
             <li class="nav-link">Contacts</li>
+
+            </a>
           </ul>
         </div>
       </header>
@@ -57,18 +68,18 @@
         />
       </div>
     </main>
-    <section class="section1">
+    <section id="Home" class="section1">
       <div class="container">
         <p class="sec1-p">Welcome to A.N zeph and associates</p>
-        <h1 class="sec1-p">We Are A Global <br> Force In Legal Defense</h1>
+        <h1 class="sec1-p mb-3">We Are A Global <br> Force In Legal Defense</h1>
         <p class="sec1-summ">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam
           asperiores <br> corrupti aliquid!
         </p>
-        <button class="sec1-read-more">Read More</button>
+        <button class="sec1-read-more mt-3">Read More</button>
       </div>
     </section>
-    <section class="about-section">
+    <section id="about" class="about-section">
         <div class="row">
             <div class="about-wrap">
                 <div class="col-md-6 about-left">
@@ -82,7 +93,7 @@
             </div>
         </div>
     </section>
-    <section class="practice">
+    <section id="practice" class="practice">
         <h2 class="practice-head">Practice Areas</h2>
         <p class="practice-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quod iste, dolores inventore et accusamus in fugit voluptatibus nesciunt <br> placeat voluptate laudantium rem aperiam sit!</p>
         <div class="practice-wrap">
@@ -129,14 +140,14 @@
                  <hr>
                  <li class="pw-li">Employment Litigation & <br> Counseling</li>
                  <hr>
-                 <li class="pw-li">Media & Entertainment <br> Litigation</li>
+                 <li class=x"pw-li">Media & Entertainment <br> Litigation</li>
                  <hr>
                 </ul>
                 <p class="pw-w2-p text-center">VIEW ALL PRACTICE <br> AREAS</p>
             </div>
         </div>
     </section>
-    <section class="why">
+    <section id="help" class="why">
       <div class="why-left">
         <h2 class="why-h">Why Choose Us</h2>
       </div>
@@ -202,7 +213,7 @@
         </div>
       </div>
     </section>
-    <section class="help">
+    <section class="help" id="contact">
       <h1 class="help-h">Do You Need Help?</h1>
       <p class="help-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias suscipit porro maxime nulla dolorum quas repellendus expedita quibusdam non eius?</p>
       <div class="contacts">
@@ -255,6 +266,16 @@
          `;
          background.style.transition="all 2s ease-in"
       },5000);
+      let headLinks = multiElem(".nav-link");
+      headLinks.forEach(link => {
+         link.onclick =()=>{
+          headLinks.forEach(links => {
+            links.classList.remove("active");
+          });
+          link.classList.add("active");
+         }
+      });
+      console.log(headLinks);
     </script>
   </body>
 </html>
