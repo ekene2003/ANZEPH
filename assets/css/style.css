@@ -41,6 +41,10 @@ font-family: 'Cormorant', serif;
 .right-header{
      margin-right: 3rem;
 }
+.active{
+color: #ca9617;
+
+}
 .links{
 display: flex;
 gap: 2rem;
@@ -48,10 +52,9 @@ align-items: center;
 margin-left: 1rem;
 color: white;
 font-family: 'Roboto Flex', sans-serif;
-cursor: pointer;
 }
 .nav-link{
-
+     cursor: pointer;
 }
 .bg{
      width: 100%;
