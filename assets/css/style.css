@@ -433,7 +433,20 @@
      position: absolute;
      left: -100%;
      }
-     .fa-bars,.fa-x{
+     .fa-x{
+          border: 1px solid white;
+          color: white;
+          padding: .9rem;
+          border-radius: 50%;
+          position: absolute;
+          top: 35%;
+          right: 9%;
+     
+     }
+     .close{
+          display: none;
+     }
+     .fa-bars{
           border: 1px solid white;
           color: white;
           padding: .9rem;

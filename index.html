@@ -58,8 +58,12 @@
             </a>
           </ul>
           <div class="toggle-bars">
+            <div class="open">
             <i class="fa fa-bars"></i>
+            </div>
+            <div class="close">
             <i class="fa fa-x"></i>
+            </div>
           </div> 
         </div>
       </header>
@@ -278,7 +282,19 @@
           link.classList.add("active");
          }
       });
-      console.log(headLinks);
+      let openToggler = singleElem(".open");
+       let closeToggler = singleElem(".close");
+       let navLink = singleElem(".links");
+      openToggler.onclick=()=>{
+        navLink.style.left = "0%";
+        openToggler.style.display = "none";
+        closeToggler.style.display="block";
+      }
+      closeToggler.onclick=()=>{
+        navLink.style.left = "-100%";
+        closeToggler.style.display="none";
+        openToggler.style.display = "block";
+      }
     </script>
   </body>
 </html>
