@@ -558,7 +558,7 @@
      .practice-wrap{
      display: flex;
      flex-direction: column;
-     gap: 1rem;
+     gap: .5rem;
      margin-top: 3.5rem;
      }
      .wrap{
@@ -579,18 +579,19 @@
      text-align: left;
      
      }
-     
      .practice-wrap2{
           display: flex;
+          flex-direction: column;
           gap: 5rem;
           margin-top: 3.5rem;
           width: 100%;
-          height: 120vh;
+          /* height: 100vh; */
       }
       .pw-w1{
      display: flex;
+     flex-direction: column;
      justify-content: start;
-     gap: 1rem;
+     gap: .5rem;
       }
       .pw-w2{
      padding: 1rem 2rem;
@@ -598,8 +599,7 @@
      display: flex;
      flex-direction: column;
      justify-content: center;
-     align-items:start;
-     height: 140vh;
+     height: 100vh;
      z-index: 999;
       }
      .pw-w2-h{
@@ -622,18 +622,19 @@
      margin: 0 auto;
      cursor: pointer;
      }
-     .pw-w2-p:hover{
-          transform: scale(1.3);
-     }
+     
      .why{
-          padding: 2rem 4rem;
+          padding: 2rem 1rem;
           display: flex;
+          flex-direction: column;
           justify-content: space-between;
           align-items: center;
-          position: relative !important;
           background: #000;
-          height: 120vh;
+          height: 100vh;
           gap: 2rem;
+     position: relative;
+
+
      }
      .why-left{
           z-index: 99;
@@ -641,12 +642,12 @@
      }
      .why-h{
           font-family: 'Bebas Neue', sans-serif;
-            font-size: 6rem;
+            font-size: 3rem;
             color: white;
      }
      .why-right{
           z-index: 99;
-          margin-top: 5rem; 
+          /* margin-top: 2rem;  */
      
      }
      .why-ul{
@@ -659,8 +660,9 @@
      }
      .why-li-wrap{
      display: flex;
-     justify-content: space-between;
-     gap: 3rem;
+     flex-direction: column;
+     /* justify-content: space-between; */
+     gap: 1rem;
      }
      .why-li{
      margin-bottom: 1rem;
@@ -672,10 +674,10 @@
      }
      .why-img{
           position: absolute;
-          top: 459.5%;
+            top: 521%;
           width: 100%;
           object-fit: cover;
-          height: 120vh;
+          height: 100vh;
      
      }
      .why-wrap{
@@ -698,7 +700,7 @@
           margin: 0 4rem;
           background: white;
       position: absolute;
-      top: 570%;
+      top: 600%;
       width: 90%;
      }
      .count-wrap{
