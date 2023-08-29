@@ -966,4 +966,13 @@
                margin: 0 auto;
                cursor: pointer;
                }
+               .footer{
+                    display: flex;
+                    gap: 1.5rem;
+                    background: #000;
+                    color: white;
+                    padding: 1rem;     
+                    font-family: 'Roboto Flex', sans-serif;
+               
+               }
 }
